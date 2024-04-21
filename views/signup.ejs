@@ -1,0 +1,78 @@
+<%- include('./shared/header.ejs') %>
+
+<div class="container">
+    <div class="p-5 my-5 border border-success">
+        <form action="/auth/signUp" method="POST" class="w-75 m-auto">
+            <div class="form-group my-2">
+                <h2 class="text-center test-success">Join Us Now</h2>
+            </div>
+            <div class="form-group my-2">
+                <input 
+                class="form-control"
+                type="text"
+                name="name"
+                id="name"
+                placeholder="please enter your name"
+                required
+                />
+            </div>
+
+            <div class="form-group my-2">
+                <input 
+                class="form-control"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="please enter your email"
+                required
+                />
+            </div>
+
+          
+            <div class="form-group my-2">
+                <input 
+                class="form-control"
+                type="password"
+                name="password"
+                id="password"
+                placeholder="please enter your password"
+                required
+                />
+
+            </div>
+
+            <div class="form-group my-2">
+                <input 
+                class="form-control"
+                type="password"
+                name="cpassword"
+                id="cpassword"
+                placeholder="please enter your cpassword"
+                required
+                />
+
+            </div>
+
+           
+                <div class="form-group my-2">
+                    <input 
+                   
+                    class="form-control"
+                    type="number"
+                    name="age"
+                    id="age"
+                    placeholder="please enter your age"
+                    required
+                    />
+                </div>
+
+                <div class="form-group my-2">
+                   <button type="submit" class="btn btn-outline-success w-100"> signup</button>
+                   <p class="my-2">Already have an Account?<a href="/auth/getsignIn"> login.</a></p>
+                    
+                </div>
+        </form>
+    </div>
+</div>
+
+<%- include('./shared/footer.ejs')%>
